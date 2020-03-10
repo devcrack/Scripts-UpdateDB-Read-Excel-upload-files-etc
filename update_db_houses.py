@@ -78,3 +78,6 @@ if __name__ == '__main__':
     print("Cerrando Conexion")
     connect.close()
 
+"""
+"INSERT INTO "House_house" ("id", "street", "number", "idHousingUnit_id") VALUES ('DEFAULT', 'Las calabazas', '123', '2c34ad01-90f3-4540-9263-33707827cbcf');"
+"""
