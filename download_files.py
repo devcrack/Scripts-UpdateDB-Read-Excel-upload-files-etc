@@ -160,10 +160,10 @@ def download_avatars(data):
 
 
 if __name__ == '__main__':
-    data_base_name = 'IntrareEmpresa'
-    data_base_user = 'blame711019'
-    data_base_password = 'HIPIcc711019'
-    host = 'intrare-freetierdb.c8dwggxf5yjq.us-east-2.rds.amazonaws.com'
+    data_base_name = 'XXXXXXX'
+    data_base_user = 'xXXXxxxx'
+    data_base_password = 'Xxxxxxx'
+    host = 'XxxxxXxxxx'
     connect = create_connection(data_base_name, data_base_user, data_base_password, host)
     print(connect)
     # query = "SELECT \"username\", \"avatar\" from \"Usuarios_customuser\" WHERE \"is_active\"=true;"
