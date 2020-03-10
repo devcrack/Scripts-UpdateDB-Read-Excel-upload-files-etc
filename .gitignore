@@ -211,7 +211,12 @@ env/
 venv/
 ENV/
 env.bak/
-venv.bak/
+venv.bak/x-special/nautilus-clipboard
+copy
+file:///home/devcrack/Escritorio/Private/Scripts/download_files.py
+file:///home/devcrack/Escritorio/Private/Scripts/update_files.py
+file:///home/devcrack/Escritorio/Private/Scripts/upload_to_s3.py
+g
 pip-selfcheck.json
 
 # End of https://www.gitignore.io/api/virt
