@@ -3,15 +3,17 @@ import pandas
 
 def read_exce():
     # df = pandas.read_excel('CASETA.xlsx', index_col=[0, 1, 2], skiprows=1, sheet_name='DANUBIO', )
-    df = pandas.read_excel('CASETA.xlsx', usecols="B", skiprows=1, sheet_name='DANUBIO', )
+    df = pandas.read_excel('CASETA.xlsx', usecols="B", skiprows=1, sheet_name='TINTO', )
     values = df.values
 
     # print(values)
     for row in values:
-        print(len(row))
         for element in row:
-            # print(element, end=' ')
+            element = element.split("#")
             print(element)
+            if len(element) != 2:
+                print("ERROR ")
+                return
         print()
     # print(df)
 
