@@ -54,10 +54,10 @@ def read_avatars_and_update(connection):
 
 
 if __name__ == '__main__':
-    data_base_name = 'IntrareEmpresa'
-    data_base_user = 'blame711019'
-    data_base_password = 'HIPIcc711019'
-    host = 'intrare-freetierdb.c8dwggxf5yjq.us-east-2.rds.amazonaws.com'
+    data_base_name = 'xxxxxxxx'
+    data_base_user = 'xxxxxx'
+    data_base_password = 'XXXXXX'
+    host = 'XxxxxXxxxxx'
     connect = create_connection(data_base_name, data_base_user, data_base_password, host)
     # update_avatar_route(connect, "images/524448431446/avatar.jpeg", "524448431446")
     read_avatars_and_update(connect)
