@@ -1,26 +1,28 @@
 import pandas
 import re
+import sys
 
-def read_exce():
+def read_exce(_sheet):
     # df = pandas.read_excel('CASETA.xlsx', index_col=[0, 1, 2], skiprows=1, sheet_name='DANUBIO', )
-    df = pandas.read_excel('CASETA.xlsx', usecols="B:C", skiprows=1, sheet_name='LENA', )
+    df = pandas.read_excel('DIRECCIONES.xlsx', usecols="A,B", skiprows=0, sheet_name=_sheet, )
     values = df.values
 
     # print(values)
     for row in values:
-        address = row[0]
-        address = address.split("#")
-        print(address)
-        if len(address) != 2:
-            print("ERROR ")
-            return
-        phone = row[1]
-        if phone:
-            phone = str(phone)
-            # print(f"{phone} tipo {type(phone)}")
-            phone = re.sub("\D", "", phone)
-            phone = phone[:10]
-            print(phone)
+        print(f"Calle->{row[1]}, Numero->{row[0]}")
+        # address = row[0]
+        # address = address.split("#")
+        # print(address)
+        # if len(address) != 2:
+        #     print("ERROR ")
+        #     return
+        # phone = row[1]
+        # if phone:
+        #     phone = str(phone)
+        #     # print(f"{phone} tipo {type(phone)}")
+        #     phone = re.sub("\D", "", phone)
+        #     phone = phone[:10]
+        #     print(phone)
         # print(row)
 
 
@@ -47,7 +49,8 @@ def read_exce():
     # print(df2)
 
 if __name__ == '__main__':
-    read_exce()
+    sheet_name = sys.argv[1]
+    read_exce(sheet_name)
 
     # a = [[1, 2, 3, 4], [5, 6], [7, 8, 9]]
     # for i in range(len(a)):
