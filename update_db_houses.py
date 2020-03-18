@@ -119,10 +119,10 @@ def write_houses(conection, housing_unit):
 
 
 if __name__ == '__main__':
-    data_base_name = 'intrare_residencial'
-    data_base_user = 'blame711019'
-    data_base_password = 'HIPIcc711019'
-    host = 'intrare-residencial.c8dwggxf5yjq.us-east-2.rds.amazonaws.com'
+    data_base_name = 'XXXXXX'
+    data_base_user = 'XXXXXX'
+    data_base_password = 'XXX-XXX-XXX'
+    host = 'xXXX-XXXXXXXX'
     connect = create_connection(data_base_name, data_base_user, data_base_password, host)
     sheet_name = sys.argv[1]
     write_houses(connect, sheet_name)
