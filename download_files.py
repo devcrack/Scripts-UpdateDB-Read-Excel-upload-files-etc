@@ -43,35 +43,6 @@ def check_folder(directory_path):
         print(f"Directory:{folder} CREATED")
         os.makedirs(folder)
 
-#
-#
-# def download_avatars(tuple_url_s):
-#     for avatar in tuple_url_s:
-#         if all(avatar):
-#             # print(f"Type:{type(avatar)} data:{avatar[0]}")
-#             data = avatar[0]
-#             data = str(data) # Obtenemos la direccion del Archivo en la cubeta
-#             dir = data.split("/")
-#             # file_name = os.path.splitext(dir[len(dir) - 1])[1]
-#             file_name = dir[len(dir) - 1]
-#             dir = dir[len(dir)-2]
-#             dir = IMG_FOLDER_AVATAR + dir + "/"
-#             check_folder(dir)
-#             print(f"Created:{dir}")
-#             if "+" in data:
-#                 # print(f"old->{data}")
-#                 data = data.replace("+", "%2B")
-#                 # print(f"New->{data}")
-#             elif "@" in data:
-#                 # print(f"old->{data}")
-#                 data = data.replace("@", "%40")
-#                 # print(f"New->{data}")
-#             url_to_download = bucket_url + data
-#             w_file = dir + file_name
-#             # print(f"Lo que quiero Bajar{url_to_download}")
-#             # print(f"A donde lo quiero bajar:{w_file}\n")
-#             urlretrieve(url_to_download, w_file)
-#             print(f"Downloaded:{file_name}")
 
 
 def download_front_id(data):
